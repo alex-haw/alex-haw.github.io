@@ -80,8 +80,9 @@
 				<li>3D Printing (FDM; APA and personal projects)</li>
 				<li>3D CAD</li>
 				<li>Programming Languages:</li>
+				<li>Soldering</li>
 				<ul>
-					<li>C++ (<a href="https://www.d.umn.edu/~jallert/cs1/syls18.html">CS1511</a> and <a href="./cs1521.pdf">CS1521</a>)</li>
+					<li>C++/C (<a href="https://www.d.umn.edu/~jallert/cs1/syls18.html">CS1511</a> and <a href="./cs1521.pdf">CS1521</a>)</li>
 					<li>Python (<a href="#seniord">senior design project</a>)</li>
 					<li>Java (<a href="https://www.d.umn.edu/~tcolburn/cs2511/syllabus.xhtml">CS2511</a>)</li>
 					<li>Windows VBA (APA)</li>
@@ -169,6 +170,21 @@
 			<p><b>Tesla Coil Interactive Display</b>
 			<br>The EE Lounge is where I spent much of my time between classes, so I made an effort to make it into an inviting place for learning and collaboration. There is a display case next to the entrance, which initially contained a monitor that had long-since stopped working. I took an abandoned Tesla Coil that was once a capstone project and replaced the monitor with it. I then built a Faraday Cage around the coil for safety, then added some buttons so that visitors can energize the coil themselves!
 			</p>
+			<p><b>CAN Bus Angle Sensor Tester</b>
+			<br>I created a device at APA to test angle sensors that use the CANopen protocol. These sensors are used in the junction boxes of one of our customers that produce heavy industrial equipment.
+			<br>This is based off the MCP2515 chip, coordinated by an Arduino Uno. This is used by our production team to create a test report to verify that the device is functioning properly upon leaving the plant.
+			</p>
+			<p><b>Electronic Process Instruction Generator Program and Server</b>
+			<br>At APA, process instructions are typically written using a word processor. We recieved a large number of schematics for cables from a customer. These have very few components, in contrast to a typical wiring harness. I found that the amount of engineering work required to create process instructions for such a great number of practically identical assemblies was woefully inefficient, where every global revision could take several hours to update. This could be as simple as changing the length of a piece of heat-shrink tube.
+			<br>To make this operation easier, faster, and less susceptible to human error, I created a Visual Basic program that generates HTML documents from data stored in a spreadsheet. These documents are then served to the production staff from a Rasperry Pi running an Apache server. This reduced the workload on the engineering team several fold for this project.
+			</p>
+			<p><b>Schematic Data Extractor</b>	
+			<br>This is a program I created in Visual Basic, which is able to extract data from drawings recieved from customers and parse it into units that are formatted for our process instructions. This operation was often facilitated by arduous creation of formulas in Excel, but could now be performed at the click of a button.
+			</p>
+			<p><b>ECO Checker Program</b>
+			<br>The APA engineering team composes sometimes hundreds of ECOs a day, which are synced to our ERP system following review. These are created by hand, and this led to an endless stream of typos and other various goofs that created an enormous bottleneck in the ECO integration process.
+			<br>I created a program that can by run at the click of a button that checks a long list of common errors in these ECO and alerts the engineer before it becomes a problem!
+			</p> 
 		</div>
 	</div>
 
