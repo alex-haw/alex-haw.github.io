@@ -28,5 +28,6 @@ h2{
 	padding-left: 10%;
 }
 .img-thumbnail:hover{
-	transform: scale(2);
+	transform: scale(1.1);
 }
+ 

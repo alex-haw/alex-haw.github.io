@@ -10,7 +10,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
 		<script src="./js/myJqueryStuff.js"></script>
 		<script src="js/highslide-5.0.0/highslide/highslide-full.js"></script>
-		
+		<link rel="stylesheet" href="./lightbox2-2.11.3/dist/css/lightbox.min.css">		
 		<link rel="stylesheet" href="./styles/alex-haw.css"></link>
 	</head>
 	<body>
@@ -33,11 +33,6 @@
 		<h1>Alexander Haw</h1>
 		<h2>I see it as my duty as an engineer to uphold integrity, honesty, and goodness in our industry.
  The rate of growth that we're observing in technology is unprecedented in our history, so likewise the influence of our actions have unprecedented importance.</h2>
-	</div>
-
-	<div class="text-center" style="margin-top: 0;">
-	<h3>I'm on a motorcycle trip around the country right now! I'll update my location daily!</h3>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90028.83181379535!2d-93.388774275428!3d45.15872919573559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b33ae212d52143%3A0xb39dbc7de42ab709!2sMinneapolis%2C%20MN%2055433!5e0!3m2!1sen!2sus!4v1623458638449!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
 
 	<div class="container">
@@ -156,45 +151,89 @@
 		</div>
 		<div class="col-sm-12">
 			<h3>Projects</h3>
-			<p style = "display: inline-block; width: 79%; id="seniord"><b>Senior Design Project:</b> Long-Range ISM-Band File Transfer
+			<div class="col-sm-12">
+			<a class="example-image-link" href="./img/senior_d.jpg" data-lightbox="example-1" >
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/senior_d.jpg"/>
+			</a>
+			<p id="seniord"><b>Senior Design Project:</b> Long-Range ISM-Band File Transfer
 			<br>This is a system of devices and an accompanying protocol for transferring files up to a kilometer away. My teammates and I developed this novel implementation of a common idea using several popular technologies including: Python, Raspberry Pi, LoRa, CAD, and FDM.
 			<br><a href="https://youtu.be/p_xYzZlvcl0">Video Presentation</a>
 			</p>
+			</div>
+
+			<div class="col-sm-12">		
+			<a class="example-image-link" href="./img/dms_masso.png" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/dms_masso.png" />
+			</a>
 			<p><b>Reverser Engineering Duluth Maker Space CNC</b>
 			<br>The Duluth Maker space had recently installed a new CNC router in their wood-shop. In order to operate it however, they needed an electrical schematic for the city to approve. I was referred to this task by my friend Josh from APA.
 			<br>See below for the final product, made in Libre Office. I had a lot of fun working with the DMS staff on this!
 			<br><a href="./pdf/dms_masso.pdf">Electrical Schematic</a>
 			</p>
+			</div>
+
+			<div class="col-sm-12">
+			<!--a class="example-image-link" href="./img/senior_d.jpg" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/senior_d.jpg" />
+			</a-->
 			<p><b>UMD EE Lounge Workspace</b>
 			<br>One of the most common grievances from EE undergrads at UMD is the lack of resources available to student for personal projects. This follows from the second most common comment: that there is a lack of hands on teaching in the curriculum.
 			<br>To help with this, I converted one of the UMD student areas to a workspace. This includes a workbench with tools for creating electronics, including a 3D printer. 
 			</p>
+			</div>
+
+			<div class="col-sm-12">
+			<a class="example-image-link" href="./img/tesla_display.jpg" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/tesla_display.jpg" />
+			</a>
 			<p><b>Tesla Coil Interactive Display</b>
 			<br>The EE Lounge is where I spent much of my time between classes, so I made an effort to make it into an inviting place for learning and collaboration. There is a display case next to the entrance, which initially contained a monitor that had long-since stopped working. I took an abandoned Tesla Coil that was once a capstone project and replaced the monitor with it. I then built a Faraday Cage around the coil for safety, then added some buttons so that visitors can energize the coil themselves!
 			</p>
+			</div>
+
+			<div class="col-sm-12">
+			<!--a class="example-image-link" href="./img/senior_d.jpg" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/senior_d.jpg" />
+			</a-->
 			<p><b>CAN Bus Angle Sensor Tester</b>
 			<br>I created a device at APA to test angle sensors that use the CANopen protocol. These sensors are used in the junction boxes of one of our customers that produce heavy industrial equipment.
 			<br>This is based off the MCP2515 chip, coordinated by an Arduino Uno. This is used by our production team to create a test report to verify that the device is functioning properly upon leaving the plant.
 			</p>
+			</div>
+
+			<div class="col-sm-12">
+			<!--a class="example-image-link" href="./img/senior_d.jpg" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/senior_d.jpg" />
+			</a-->
 			<p><b>Electronic Process Instruction Generator Program and Server</b>
 			<br>At APA, process instructions are typically written using a word processor. We recieved a large number of schematics for cables from a customer. These have very few components, in contrast to a typical wiring harness. I found that the amount of engineering work required to create process instructions for such a great number of practically identical assemblies was woefully inefficient, where every global revision could take several hours to update. This could be as simple as changing the length of a piece of heat-shrink tube.
 			<br>To make this operation easier, faster, and less susceptible to human error, I created a Visual Basic program that generates HTML documents from data stored in a spreadsheet. These documents are then served to the production staff from a Rasperry Pi running an Apache server. This reduced the workload on the engineering team several fold for this project.
 			</p>
+			</div>
+
+			<div class="col-sm-12">
+			<!--a class="example-image-link" href="./img/senior_d.jpg" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/senior_d.jpg" />
+			</a-->
 			<p><b>Schematic Data Extractor</b>	
 			<br>This is a program I created in Visual Basic, which is able to extract data from drawings recieved from customers and parse it into units that are formatted for our process instructions. This operation was often facilitated by arduous creation of formulas in Excel, but could now be performed at the click of a button.
 			</p>
+			</div>
+
+			<div class="col-sm-12">
+			<!--a class="example-image-link" href="./img/senior_d.jpg" data-lightbox="example-1">
+			<img class="project img-responsive pull-right img-thumbnail" width=300 src="./img/senior_d.jpg" />
+			</a-->
 			<p><b>ECO Checker Program</b>
 			<br>The APA engineering team composes sometimes hundreds of ECOs a day, which are synced to our ERP system following review. These are created by hand, and this led to an endless stream of typos and other various goofs that created an enormous bottleneck in the ECO integration process.
 			<br>I created a program that can by run at the click of a button that checks a long list of common errors in these ECO and alerts the engineer before it becomes a problem!
 			</p> 
+			</div>
 		</div>
 	</div>
 
 	</div>
-		<div class="col-sm-12 text-center jumbotron">
-			<p>If you'd like to copy this site template, download it <a href="./static/template.html">here!</a></p>
-		</div>
-
+	<script src="./lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>
